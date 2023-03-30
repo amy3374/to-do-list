@@ -1,0 +1,78 @@
+body {
+    margin : 0;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.input-area {
+margin-bottom: 10px;
+}
+#task-input {
+    width:80%;
+    border:1px solid blanchedalmond;
+}
+#add-button {
+    border: none;
+    background-color: blanchedalmond;
+}
+.task-area {
+    border: 1px solid lightgray;
+}
+.task-tabs {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+.task-tabs div {
+    padding: 1em;
+}
+
+#under-line {
+    height: 4px;
+    width: 65px;
+    background-color: pink;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    padding:0px
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+
+}
+.task span {
+    font-size: 16px;
+    padding: 15px;
+}
+.task-done {
+    text-decoration: line-through;
+    background-color: lightgray;
+}
+.button-box {
+    display: flex;
+}
+.button-box button{
+    height: 100%;
+    width: 60px;
+    background-color: white;
+    border:none;
+}
+.fa-check {
+    color: greenyellow;
+}
+.fa-undo-alt {
+    color: gray;
+}
+.fa-trash {
+    color: red;
+}
+.task-tabs div {
+    cursor:pointer;
+}
