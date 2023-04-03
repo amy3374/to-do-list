@@ -1,78 +1,92 @@
 body {
-    margin : 0;
-    background-image: url("images/background.jpg");
+    margin:0px;
+    /* background-image: url("images/back5.jpg"); */
+    background-color: lightcyan;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Rajdhani", sans-serif;
 }
 
-.container {
-    background-color: white;
-    min-height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.container{
+    background-color: #FFF0F5;
+    height: 100vh;
+    max-width: 800px;
+    border-top: 10px solid lightcyan;
+    border-bottom: 10px solid lightcyan;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container h1{
+    margin: 20px 0;
 }
 .input-area {
-margin-bottom: 10px;
+    width: 100%;
 }
 #task-input {
-    width:80%;
-    border:1px solid blanchedalmond;
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    width: 80%;
+    border: none;
+    height: 2em;
+    border: 1px solid lightgray;
 }
 #add-button {
     border: none;
-    background-color: blanchedalmond;
+    height: 2em;
+    width: 2em;
+    background-color: lightpink;
 }
 .task-area {
     border: 1px solid lightgray;
+    margin-top: 2em;
 }
 .task-tabs {
     display: flex;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;   
     position: relative;
-}
-.task-tabs div {
-    padding: 1em;
+    background-color: white;
 }
 
-#under-line {
+.task-tabs div {
+    padding: 1em;
+    cursor: pointer;
+    
+}
+#tabs-underline {
+    padding: 0;
     height: 4px;
-    width: 65px;
     background-color: pink;
     position: absolute;
+    width: 60px;
     left: 0px;
-    bottom: 0px;
-    padding:0px
+    bottom: 0;
+    transition: 0.5s;
 }
 .task {
     display: flex;
     justify-content: space-between;
-
+    background-color: white;
 }
 .task span {
-    font-size: 16px;
-    padding: 15px;
+    padding: 1em;
 }
-.task-done {
-    text-decoration: line-through;
-    background-color: lightgray;
-}
-.button-box {
+.task-button {
     display: flex;
 }
-.button-box button{
+.task-button button{
     height: 100%;
-    width: 60px;
+    border: none;
+    width: 5em;
+    margin: 0;
+    padding: 1em;
     background-color: white;
-    border:none;
 }
 .fa-check {
-    color: greenyellow;
+    color: limegreen;
 }
-.fa-undo-alt {
-    color: gray;
-}
-.fa-trash {
+.fa-trash-alt{
     color: red;
 }
-.task-tabs div {
-    cursor:pointer;
+.task-done {
+    background-color: lightgray;
+    text-decoration: line-through;
+
 }
