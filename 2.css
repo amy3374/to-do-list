@@ -1,0 +1,88 @@
+body {
+    margin:0px;
+    background-image: url("images/back3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.container{
+    background-color: white;
+    height: 100vh;
+    max-width: 800px;
+    border-top: 10px solid lightcyan;
+    border-bottom: 10px solid lightcyan;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container h1{
+    margin: 20px 0;
+}
+.input-area {
+    width: 100%;
+}
+#task-input {
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    width: 80%;
+    border: none;
+    height: 2em;
+    border: 1px solid lightgray;
+}
+#add-button {
+    border: none;
+    height: 2em;
+    width: 2em;
+    background-color: lightpink;
+}
+.task-area {
+    border: 1px solid lightgray;
+    margin-top: 2em;
+}
+.task-tabs {
+    display: flex;
+    border-bottom: 1px solid lightgray;   
+    position: relative;
+}
+
+.task-tabs div {
+    padding: 1em;
+    cursor: pointer;
+    
+}
+#tabs-underline {
+    padding: 0;
+    height: 4px;
+    background-color: pink;
+    position: absolute;
+    width: 60px;
+    left: 0px;
+    bottom: 0;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+}
+.task span {
+    padding: 1em;
+}
+.task-button {
+    display: flex;
+}
+.task-button button{
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    padding: 1em;
+    background-color: white;
+}
+.fa-check {
+    color: limegreen;
+}
+.fa-trash-alt{
+    color: red;
+}
+.task-done {
+    background-color: lightcyan;
+    text-decoration: line-through;
+
+}
